@@ -5,13 +5,14 @@ import { NavbarProps } from "../models";
 const Navbar = () => {
   return (
     <div>
-      <NavbarProps logog={Logo} 
-      FirstL="Why Legit Hair"
-      SecondL="How it works"
-      ThirdL="Contact Us"
-      Play={PlayStore}
-      App={AppleStore}
-       />
+      <NavbarProps
+        logog={Logo}
+        FirstL="Why Legit Hair"
+        SecondL="How it works"
+        ThirdL="Contact Us"
+        Play={PlayStore}
+        App={AppleStore}
+      />
     </div>
   );
 };

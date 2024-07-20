@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from './components';
+import { Navbar, Page } from './components';
 import {BrowserRouter} from 'react-router-dom';
 
 const Display = () => {
@@ -7,6 +7,7 @@ const Display = () => {
     <React.Fragment>
       <BrowserRouter>
       <Navbar />
+      <Page />
       </BrowserRouter>
     </React.Fragment>
   )

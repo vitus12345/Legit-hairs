@@ -1,1 +1,50 @@
+@import 'variables';
 
+.pag{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 10rem;
+    .container{
+        h1{
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 78px;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+            color: $primary-color;
+            margin-left: 25%;
+        }
+        .imgs{
+            margin-left: 25%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .lastf{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .dpercent{
+                h2{
+                    font-weight: 700;
+                    font-size: 45px;
+                }
+                span{
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+            .ellisple{
+                display: flex;
+                flex-direction: row;
+            }
+            .review{
+                p{
+                    color: black;
+                }
+            }
+        }
+    }
+}

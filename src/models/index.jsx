@@ -1,3 +1,4 @@
 import NavbarProps from "./NavbarProps";
+import Pages from "./Pages";
 
-export { NavbarProps }
+export { NavbarProps, Pages }
