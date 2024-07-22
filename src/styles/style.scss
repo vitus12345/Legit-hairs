@@ -1,50 +1,112 @@
-@import 'variables';
+@import "variables";
 
-.pag{
-    width: 50%;
-    margin-left: 50%;
-    margin-top: 10rem;
-    .container{
-        h1{
-            font-size: 72px;
-            font-weight: 700;
-            line-height: 78px;
+.page1,
+.page2,
+.page3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 101vh;
+  padding-top: 100px;
+  scroll-behavior: smooth;
+}
+.page1 {
+  background-image: url("../assets/Group 68.png");
+}
+.page2 {
+  background-image: url("../assets/Desktop-2k.png");
+}
+.page3 {
+  background-image: url("../assets/Desktop\ -\ 3.png");
+}
+.pag,
+.pag1,
+.pag2 {
+  width: 50%;
+  margin-top: 10rem;
+  padding: 0 20px;
+  .container {
+    h1 {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 78px;
+    }
+    .line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        color: $primary-color;
+      }
+    }
+    .imgs {
+      display: flex;
+      justify-content: space-between;
+    }
+    .lastf {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .dpercent {
+        h2 {
+          font-weight: 700;
+          font-size: 45px;
+        }
+        span {
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+      .ellisple {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .image-overlay-container {
+          position: relative;
+          display: flex;
+        }
+
+        .image-wrapper {
+          position: relative;
+          margin-left: -10px; /* Adjust this value as needed to control the overlap */
+        }
+
+        .image-wrapper img {
+          display: block;
+        }
+      }
+      .review {
+        p,
+        h4 {
+          color: black;
+          font-weight: 700;
         }
         p {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 30px;
-            color: $primary-color;
-            margin-left: 25%;
+          font-size: 14px;
         }
-        .imgs{
-            margin-left: 25%;
-            display: flex;
-            justify-content: space-between;
-        }
-        .lastf{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .dpercent{
-                h2{
-                    font-weight: 700;
-                    font-size: 45px;
-                }
-                span{
-                    font-size: 12px;
-                    font-weight: 700;
-                }
-            }
-            .ellisple{
-                display: flex;
-                flex-direction: row;
-            }
-            .review{
-                p{
-                    color: black;
-                }
-            }
-        }
+      }
     }
+  }
+}
+
+.pag1 {
+  margin-left: 50%;
+  .imgs {
+    margin-left: 25%;
+  }
+}
+
+.pag,
+.pag2 {
+  .imgs {
+    margin-right: 25%;
+  }
+  .lastf {
+    flex-direction: row-reverse;
+  }
 }

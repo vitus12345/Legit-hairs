@@ -6,7 +6,7 @@ import { RiMenu2Line } from "react-icons/ri";
 const NavbarProps = ({ logog, FirstL, SecondL, ThirdL, App, Play }) => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid justify-content-between ">
           <a className="navbar-brand mr-auto w-25" href="/">
             <img src={logog} alt="Logo" className="w-75" />

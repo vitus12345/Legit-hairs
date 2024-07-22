@@ -13,6 +13,7 @@ import Vector1 from "./Vector 22.png";
 import Vector2 from "./Vector 23.png";
 import PlayStore from "./Play-store.png";
 import AppleStore from "./App-store.png";
+import Line from "./Line1.png";
 
 export {
   Desktop,
@@ -30,4 +31,5 @@ export {
   Vector2,
   PlayStore,
   AppleStore,
+  Line
 };

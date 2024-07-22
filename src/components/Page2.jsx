@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <div>
       <Pages 
-      className="pag"
+      className="pag1"
       Heading="Discover New Hair Collection"
       lines={Line}
       Phrase="Fashion is part of the daily air and it changes all the time, with all the events."
