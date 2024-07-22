@@ -42,7 +42,7 @@ const Pages = ({
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <div>
+            <div className="arr">
               <img src={Arrow} alt="" />
             </div>
             <div>
