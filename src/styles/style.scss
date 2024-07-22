@@ -150,7 +150,7 @@
   .vector-overlay {
     position: absolute;
     left: 10%;
-    top: 15%;
+    top: 20%;
     width: 100%;
     height: 100%;
     pointer-events: none; // Ensure the overlay doesn't interfere with other elements
@@ -159,6 +159,9 @@
     overflow: hidden;
     justify-content: center; // Center horizontally
     align-items: center; // Center vertically
+    @media (max-width: 998px) {
+        display: none;
+    }
   }
   
   .vector-overlay img {
