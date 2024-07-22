@@ -1,7 +1,7 @@
 @import "variables";
 .carousel-item {
-    height: 100vh;
-  }
+  height: 100vh;
+}
 
 .page1,
 .page2,
@@ -14,15 +14,16 @@
   height: 100vh;
   padding-top: 100px;
   scroll-behavior: smooth;
+  position: relative;
 }
 .page1 {
-  background-image: url("../assets/Group 68.png");
+  background-image: url("../assets/Group-682.png");
 }
 .page2 {
-  background-image: url("../assets/Desktop-2k.png");
+  background-image: url("../assets/Desktop\ -\ 2.png");
 }
 .page3 {
-  background-image: url("../assets/Desktop\ -\ 3.png");
+  background-image: url("../assets/Desktop-3h.png");
 }
 .pag,
 .pag1,
@@ -32,18 +33,18 @@
   padding: 0 20px;
   .container {
     h1 {
-      font-size: 72px;
+      font-size: $lineB;
       font-weight: 700;
-      line-height: 78px;
+      line-height: $lineB;
     }
     .line {
       display: flex;
       align-items: center;
       gap: 10px;
       p {
-        font-size: 24px;
+        font-size: $linesV;
         font-weight: 700;
-        line-height: 30px;
+        line-height: $linesH;
         color: $primary-color;
       }
     }
@@ -59,10 +60,10 @@
       .dpercent {
         h2 {
           font-weight: 700;
-          font-size: 45px;
+          font-size: $lineB;
         }
         span {
-          font-size: 12px;
+          font-size: $lineW;
           font-weight: 700;
         }
       }
@@ -90,7 +91,7 @@
           font-weight: 700;
         }
         p {
-          font-size: 14px;
+          font-size: $lineW;
         }
       }
     }
@@ -118,29 +119,70 @@
 
 .pag1 {
   margin-left: 50%;
-//   .imgs {
-//     margin-left: 25%;
-//   }
+  //   .imgs {
+  //     margin-left: 25%;
+  //   }
   @media screen and (max-width: 998px) {
     margin-left: 0;
-    .imgs{
-        margin-left: 0;
+    .imgs {
+      margin-left: 0;
     }
   }
 }
 
 .pag,
 .pag2 {
-//   .imgs {
-//     margin-left: 25%;
-//   }
+  //   .imgs {
+  //     margin-left: 25%;
+  //   }
   .lastf {
     flex-direction: row-reverse;
   }
   @media screen and (max-width: 998px) {
     margin-right: 0;
     .imgs {
-        margin-right: 0;
+      margin-right: 0;
     }
   }
 }
+
+  
+  .vector-overlay {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; // Ensure the overlay doesn't interfere with other elements
+    display: flex;
+    z-index: 1; 
+    overflow: hidden;
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+  }
+  
+  .vector-overlay img {
+    position: absolute;
+    top: -50%; /* Start position for the animation */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
+    animation: vanishDrop 10s ease-in-out forwards;
+  }
+
+  @keyframes vanishDrop {
+    0% {
+      top: -50%;
+      opacity: 0;
+    }
+    50% {
+      top: 0%;
+      opacity: 1;
+    }
+    100% {
+      top: 0%;
+      opacity: 1;
+    }
+  }
+  

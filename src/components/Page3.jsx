@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppleStore, Ellipse, Ellipse1, Ellipse2, Line, PlayStore } from '../assets';
+import { AppleStore, Ellipse, Ellipse1, Ellipse2, Line, PlayStore, Vector } from '../assets';
 import { Pages } from '../models';
 import "../styles/style.scss";
 
@@ -18,6 +18,7 @@ const Page = () => {
       customer2={Ellipse1}
       customer3={Ellipse2}
       Reviews="15"
+      vectors={Vector}
       />
     </div>
   )

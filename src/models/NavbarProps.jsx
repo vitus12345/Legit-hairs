@@ -19,7 +19,7 @@ const NavbarProps = ({ logog, FirstL, SecondL, ThirdL, App, Play }) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <RiMenu2Line />
+            <RiMenu2Line style={{color: "#fff"}}/>
           </button>
           <div
             className="collapse navbar-collapse justify-content-center"

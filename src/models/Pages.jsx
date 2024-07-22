@@ -15,10 +15,14 @@ const Pages = ({
   customer2,
   customer3,
   Reviews,
+  vectors
 }) => {
   return (
     <React.Fragment>
       <div className={className}>
+        <div className="vector-overlay">
+            <img src={vectors} alt=""  />
+        </div>
         <div className="container">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
