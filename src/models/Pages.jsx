@@ -15,13 +15,13 @@ const Pages = ({
   customer2,
   customer3,
   Reviews,
-  vectors
+  vectors,
 }) => {
   return (
     <React.Fragment>
       <div className={className}>
         <div className="vector-overlay">
-            <img src={vectors} alt=""  />
+          <img src={vectors} alt="" />
         </div>
         <div className="container">
           <motion.h1
@@ -60,13 +60,13 @@ const Pages = ({
             className="lastf"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <div className="dpercent">
               <motion.h2
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 1.2 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
               >
                 {Dpercent}%
               </motion.h2>
@@ -94,7 +94,7 @@ const Pages = ({
                 className="review"
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 1.8 }}
+                transition={{ duration: 0.5, delay: 1.0 }}
               >
                 <h4>{Reviews}K</h4>
                 <p>Well Reviews</p>
