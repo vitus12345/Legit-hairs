@@ -1,11 +1,23 @@
+// Primary color for text, backgrounds, etc.
 $primary-color: #fff;
+
+// Secondary color for text, backgrounds, etc.
 $secondary-color: #181818;
+
+// Default top margin/padding
 $tops: 10px;
+
+// Responsive line height for horizontal elements
 $linesH: clamp(30px, 5vw, 45px);
+
+// Responsive line height for vertical elements
 $linesV: clamp(24px, 5vw, 30px);
+
+// Responsive line height for bottom elements
 $lineB: clamp(45px, 5vw, 78px);
+
+// Responsive width for lines or elements
 $lineW: clamp(12px, 2vw, 20px);
+
+// Responsive radius for rounded elements
 $lineR: clamp(10px, 1vw, 15px);
-
-
-

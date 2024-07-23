@@ -1,8 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { Arrow } from "../assets";
-import "../styles/style.scss";
+import { motion } from "framer-motion"; // Importing Framer Motion for animations
+import { Arrow } from "../assets"; // Importing Arrow image from assets
+import "../styles/style.scss"; // Importing styles
 
+// Pages component definition
 const Pages = ({
   className,
   Heading,
@@ -20,10 +21,12 @@ const Pages = ({
   return (
     <React.Fragment>
       <div className={className}>
+        {/* Vector overlay */}
         <div className="vector-overlay">
           <img src={vectors} alt="" />
         </div>
         <div className="container">
+          {/* Heading with animation */}
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -31,6 +34,8 @@ const Pages = ({
           >
             {Heading}
           </motion.h1>
+
+          {/* Line and phrase with animation */}
           <motion.div
             className="line"
             initial={{ opacity: 0, x: -50 }}
@@ -40,6 +45,8 @@ const Pages = ({
             <img src={lines} alt="" />
             <p>{Phrase}</p>
           </motion.div>
+
+          {/* Images (Arrow, App, Play) with animation */}
           <motion.div
             className="imgs"
             initial={{ opacity: 0 }}
@@ -56,12 +63,15 @@ const Pages = ({
               <img src={Play} alt="" />
             </div>
           </motion.div>
+
+          {/* Discount percentage and customer reviews with animation */}
           <motion.div
             className="lastf"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
+            {/* Discount percentage */}
             <div className="dpercent">
               <motion.h2
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -72,6 +82,8 @@ const Pages = ({
               </motion.h2>
               <span>Off New Arrivals </span>
             </div>
+
+            {/* Customer images and reviews */}
             <div className="ellisple">
               <motion.div
                 className="image-overlay-container"
@@ -90,6 +102,7 @@ const Pages = ({
                 </div>
               </motion.div>
 
+              {/* Review count */}
               <motion.div
                 className="review"
                 initial={{ opacity: 0, x: 50 }}

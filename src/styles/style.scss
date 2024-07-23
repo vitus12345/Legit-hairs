@@ -1,194 +1,230 @@
+// Import variables for consistent styling
 @import "variables";
+
+// Carousel item styling
 .carousel-item {
-  height: 100vh;
+  height: 100vh; // Make each carousel item full height of the viewport
 }
 
+// Page styling for different pages with background images
 .page1,
 .page2,
 .page3 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
-  padding-top: 100px;
-  scroll-behavior: smooth;
-  position: relative;
+  background-position: center; // Center the background image
+  background-repeat: no-repeat; // Prevent the background image from repeating
+  background-size: cover; // Cover the entire container with the background image
+  background-attachment: fixed; // Keep background image fixed during scroll
+  width: 100%; // Full width of the viewport
+  height: 100vh; // Full height of the viewport
+  padding-top: 100px; // Add padding at the top
+  scroll-behavior: smooth; // Smooth scroll behavior
+  position: relative; // Position relative for positioning child elements
 }
+
+// Page-specific background images
 .page1 {
-  background-image: url("../assets/Group-682.png");
+  background-image: url("../assets/Group-682.png"); // Set background image for Page 1
 }
 .page2 {
-  background-image: url("../assets/Desktop\ -\ 2.png");
+  background-image: url("../assets/Desktop - 2.png"); // Set background image for Page 2
 }
 .page3 {
-  background-image: url("../assets/Desktop-3h.png");
+  background-image: url("../assets/Desktop-3h.png"); // Set background image for Page 3
 }
+
+// Common styling for page sections
 .pag,
 .pag1,
 .pag2 {
-  width: 50%;
-  margin-top: 10rem;
-  padding: 0 20px;
+  width: 50%; // Set width to 50% of the container
+  margin-top: 10rem; // Add top margin
+  padding: 0 20px; // Add horizontal padding
+
+  // Container-specific styles
   .container {
+    // Heading styling
     h1 {
-      margin-top: $lineR;
-      font-size: $lineB;
-      font-weight: 700;
-      line-height: $lineB;
+      margin-top: $lineR; // Margin-top based on variable
+      font-size: $lineB; // Font size based on variable
+      font-weight: 700; // Bold font weight
+      line-height: $lineB; // Line height based on variable
     }
+
+    // Line section styling
     .line {
-      margin-top: $lineR;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      margin-top: $lineR; // Margin-top based on variable
+      display: flex; // Use flexbox for layout
+      align-items: center; // Align items center vertically
+      gap: 10px; // Gap between items
+
       p {
-        font-size: $linesV;
-        font-weight: 700;
-        line-height: $linesH;
-        color: $primary-color;
+        font-size: $linesV; // Font size based on variable
+        font-weight: 700; // Bold font weight
+        line-height: $linesH; // Line height based on variable
+        color: $primary-color; // Text color based on variable
       }
     }
+
+    // Image section styling
     .imgs {
-      margin-top: $lineR;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      margin-top: $lineR; // Margin-top based on variable
+      display: flex; // Use flexbox for layout
+      justify-content: space-between; // Space items evenly
+      align-items: center; // Align items center vertically
     }
+
+    // Last section styling
     .lastf {
-      margin-top: $lineR;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      margin-top: $lineR; // Margin-top based on variable
+      display: flex; // Use flexbox for layout
+      justify-content: space-between; // Space items evenly
+      align-items: center; // Align items center vertically
+
+      // Discount percentage section styling
       .dpercent {
-        margin-top: $lineR;
+        margin-top: $lineR; // Margin-top based on variable
+
         h2 {
-          font-weight: 700;
-          font-size: $lineB;
+          font-weight: 700; // Bold font weight
+          font-size: $lineB; // Font size based on variable
         }
+
         span {
-          font-size: $lineW;
-          font-weight: 700;
+          font-size: $lineW; // Font size based on variable
+          font-weight: 700; // Bold font weight
         }
       }
+
+      // Customer images and review section styling
       .ellisple {
-        margin-top: $lineR;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
+        margin-top: $lineR; // Margin-top based on variable
+        display: flex; // Use flexbox for layout
+        flex-direction: row; // Arrange items in a row
+        gap: 10px; // Gap between items
+
         .image-overlay-container {
-          position: relative;
-          display: flex;
+          position: relative; // Position relative for child positioning
+          display: flex; // Use flexbox for layout
         }
 
         .image-wrapper {
-          position: relative;
-          margin-left: -10px; /* Adjust this value as needed to control the overlap */
+          position: relative; // Position relative for image overlap
+          margin-left: -10px; // Adjust margin for image overlap
         }
 
         .image-wrapper img {
-          display: block;
+          display: block; // Ensure image displays as a block
         }
       }
+
+      // Review section styling
       .review {
         p,
         h4 {
-          font-weight: 700;
+          font-weight: 700; // Bold font weight
         }
+
         p {
-          font-size: $lineW;
+          font-size: $lineW; // Font size based on variable
         }
       }
     }
   }
+
+  // Responsive design for screens smaller than 998px
   @media (max-width: 998px) {
-    width: 100%;
-    color: $primary-color;
+    width: 100%; // Full width of the container
+    color: $primary-color; // Text color based on variable
+
     .imgs {
-      justify-content: center;
-      margin: 0;
+      justify-content: center; // Center items horizontally
+      margin: 0; // Remove margins
+
       .arr {
-        display: none;
+        display: none; // Hide the arrow icon
       }
     }
+
     .lastf {
       .review {
         p,
         h4 {
-          color: $primary-color;
+          color: $primary-color; // Set color to primary color
         }
       }
     }
   }
 }
 
+// Additional styling for specific pages
 .pag1 {
-  margin-left: 50%;
-  //   .imgs {
-  //     margin-left: 25%;
-  //   }
+  margin-left: 50%; // Adjust left margin
+
   @media screen and (max-width: 998px) {
-    margin-left: 0;
+    margin-left: 0; // Remove left margin on smaller screens
+
     .imgs {
-      margin-left: 0;
+      margin-left: 0; // Remove left margin for images
     }
   }
 }
 
 .pag,
 .pag2 {
-  //   .imgs {
-  //     margin-left: 25%;
-  //   }
   .lastf {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; // Reverse the order of flex items
   }
+
   @media screen and (max-width: 998px) {
-    margin-right: 0;
+    margin-right: 0; // Remove right margin on smaller screens
+
     .imgs {
-      margin-right: 0;
+      margin-right: 0; // Remove right margin for images
     }
   }
 }
 
+// Vector overlay styling
 .vector-overlay {
-  position: absolute;
-  left: 10%;
-  top: clamp(30%, 3vw, 55%);
-  width: 100%;
-  height: 100%;
+  position: absolute; // Absolute positioning
+  left: 10%; // Offset from the left
+  top: clamp(30%, 3vw, 55%); // Vertical position with responsive clamp
+  width: 100%; // Full width of the container
+  height: 100%; // Full height of the container
   pointer-events: none; // Ensure the overlay doesn't interfere with other elements
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
+  display: flex; // Use flexbox for layout
+  z-index: 1; // Set stacking order
+  overflow: hidden; // Hide overflowing content
   justify-content: center; // Center horizontally
   align-items: center; // Center vertically
+
   img {
-    position: absolute;
-    top: -50%; /* Start position for the animation */
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 100%;
-    max-height: 100%;
-    animation: vanishDrop 2s ease-in-out forwards;
+    position: absolute; // Absolute positioning
+    top: -50%; // Initial top position for animation
+    left: 50%; // Center horizontally
+    transform: translateX(-50%); // Center the image
+    max-width: 100%; // Limit image width
+    max-height: 100%; // Limit image height
+    animation: vanishDrop 2s ease-in-out forwards; // Apply animation
   }
+
   @media (max-width: 998px) {
-    display: none;
+    display: none; // Hide vector overlay on smaller screens
   }
 }
 
+// Keyframes for vanish drop animation
 @keyframes vanishDrop {
   0% {
-    top: -50%;
-    opacity: 0;
+    top: -50%; // Start position
+    opacity: 0; // Start invisible
   }
   50% {
-    top: 0%;
-    opacity: 1;
+    top: 0%; // Mid position
+    opacity: 1; // Fully visible
   }
   100% {
-    top: 0%;
-    opacity: 1;
+    top: 0%; // End position
+    opacity: 1; // Fully visible
   }
 }

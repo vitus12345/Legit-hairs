@@ -1,67 +1,79 @@
+// Import variables for consistent styling
 @import "variables";
 
+// Navbar styling
 .navbar {
-  background: transparent;
-  width: 100%;
-  top: 0;
+  background: transparent; // Make the navbar background transparent
+  width: 100%; // Full width of the viewport
+  top: 0; // Stick to the top of the viewport
 }
 
+// Navbar link styling
 .navbar-nav .nav-link {
-  text-align: center;
-  color: #fff;
+  text-align: center; // Center align text in navbar links
+  color: #fff; // White color for text
 }
 
+// Logo image styling
 .logo-img {
-  width: 100%;
+  width: 100%; // Make logo image occupy full width of its container
 }
 
+// Icon image styling
 .icon-img {
-  max-width: 100px; /* Adjust as needed */
-  margin-left: 10px;
+  max-width: 100px; // Set maximum width for icon images
+  margin-left: 10px; // Add left margin for spacing between icons
 }
 
+// Navbar item spacing
 .navbar-nav .nav-item {
-  margin: 0 10px; /* Adjust spacing between nav items */
+  margin: 0 10px; // Horizontal spacing between navbar items
 }
 
+// Navbar toggle button styling
 .navbar-toggler {
-  border: none;
-  outline: none;
+  border: none; // Remove border from the toggle button
+  outline: none; // Remove outline from the toggle button
 }
 
+// Navbar item spacing when expanded
 .navbar-expand-lg .navbar-nav {
-  gap: 10px;
+  gap: 10px; // Gap between navbar items
 }
 
+// Responsive design for smaller screens
 @media (max-width: 992px) {
   .navbar-nav {
-    flex-direction: column; /* Stack nav items vertically on smaller screens */
-    align-items: flex-start; /* Align to the left on smaller screens */
+    flex-direction: column; // Stack navbar items vertically on smaller screens
+    align-items: flex-start; // Align items to the left on smaller screens
   }
 
   .icon-img {
-    margin-left: 0;
-    margin-bottom: 10px; /* Adjust spacing between icons */
+    margin-left: 0; // Remove left margin
+    margin-bottom: 10px; // Add bottom margin for spacing between icons
   }
 
   .d-flex.align-items-center {
-    flex-direction: row; /* Keep icons horizontally aligned */
-    justify-content: flex-start; /* Align to the left */
-    gap: 10px;
+    flex-direction: row; // Keep icons horizontally aligned
+    justify-content: flex-start; // Align to the left
+    gap: 10px; // Space between icons
   }
 
   .nav-item {
-    margin: 10px 0;
+    margin: 10px 0; // Vertical spacing between navbar items
   }
 
   .navbar-collapse {
-    justify-content: flex-start;
+    justify-content: flex-start; // Align navbar collapse content to the left
   }
 
-  .icon-img{
-    margin: 0;
+  // Remove margin for icons in responsive view
+  .icon-img {
+    margin: 0; // No margin
   }
+
+  // Adjust spacing between navbar items in responsive view
   .navbar-nav {
-    gap: 20px;
+    gap: 20px; // Increase gap between items
   }
 }

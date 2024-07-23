@@ -1,32 +1,34 @@
-import React from "react";
+import React from "react"; // Import React
 import {
-  AppleStore,
-  Ellipse,
-  Ellipse1,
-  Ellipse2,
-  Line,
-  PlayStore,
-  Vector,
-} from "../assets";
-import { Pages } from "../models";
-import "../styles/style.scss";
+  AppleStore, // Import AppleStore image
+  Ellipse, // Import Ellipse image
+  Ellipse1, // Import Ellipse1 image
+  Ellipse2, // Import Ellipse2 image
+  Line, // Import Line image
+  PlayStore, // Import PlayStore image
+  Vector, // Import Vector image
+} from "../assets"; // Import assets from the assets directory
+import { Pages } from "../models"; // Import Pages component from the models directory
+import "../styles/style.scss"; // Import styles
 
+// Page component definition
 const Page = () => {
   return (
     <div>
+      {/* Rendering Pages component with specific props */}
       <Pages
-        className="pag2"
-        Heading="Discover New Hair Collection"
-        lines={Line}
-        Phrase="Fashion is part of the daily air and it changes all the time, with all the events."
-        App={AppleStore}
-        Play={PlayStore}
-        Dpercent="25"
-        customer1={Ellipse}
-        customer2={Ellipse1}
-        customer3={Ellipse2}
-        Reviews="15"
-        vectors={Vector}
+        className="pag2" // CSS class for styling
+        Heading="Discover New Hair Collection" // Heading text
+        lines={Line} // Line image
+        Phrase="Fashion is part of the daily air and it changes all the time, with all the events." // Phrase text
+        App={AppleStore} // Apple Store image
+        Play={PlayStore} // Play Store image
+        Dpercent="25" // Discount percentage text
+        customer1={Ellipse} // Customer image 1
+        customer2={Ellipse1} // Customer image 2
+        customer3={Ellipse2} // Customer image 3
+        Reviews="15" // Reviews text
+        vectors={Vector} // Vector image
       />
     </div>
   );
