@@ -67,7 +67,7 @@
     .imgs {
       margin-top: $lineR; // Margin-top based on variable
       display: flex; // Use flexbox for layout
-      justify-content: space-between; // Space items evenly
+      justify-content: space-evenly; // Space items evenly
       align-items: center; // Align items center vertically
     }
 
