@@ -3,7 +3,7 @@
 
 // Carousel item styling
 .carousel-item {
-  height: 100vh; // Make each carousel item full height of the viewport
+  height: 100dvh; // Make each carousel item full height of the viewport
 }
 
 // Page styling for different pages with background images
@@ -15,7 +15,7 @@
   background-size: cover; // Cover the entire container with the background image
   background-attachment: fixed; // Keep background image fixed during scroll
   width: 100%; // Full width of the viewport
-  height: 100vh; // Full height of the viewport
+  height: 100dvh; // Full height of the viewport
   padding-top: 100px; // Add padding at the top
   scroll-behavior: smooth; // Smooth scroll behavior
   position: relative; // Position relative for positioning child elements
@@ -47,7 +47,6 @@
       margin-top: $lineR; // Margin-top based on variable
       font-size: $lineB; // Font size based on variable
       font-weight: 700; // Bold font weight
-      line-height: $lineB; // Line height based on variable
     }
 
     // Line section styling
@@ -60,7 +59,6 @@
       p {
         font-size: $linesV; // Font size based on variable
         font-weight: 700; // Bold font weight
-        line-height: $linesH; // Line height based on variable
         color: $primary-color; // Text color based on variable
       }
     }
@@ -133,6 +131,11 @@
 
   // Responsive design for screens smaller than 998px
   @media (max-width: 998px) {
+    .container{
+      h1{
+        text-align: center;
+      }
+    }
     width: 100%; // Full width of the container
     color: $primary-color; // Text color based on variable
     .line {
@@ -205,7 +208,7 @@
   left: 10%; // Offset from the left
   top: clamp(30%, 3vw, 55%); // Vertical position with responsive clamp
   width: 100%; // Full width of the container
-  height: 100%; // Full height of the container
+  height: 100dvh; // Full ; of the container
   pointer-events: none; // Ensure the overlay doesn't interfere with other elements
   display: flex; // Use flexbox for layout
   z-index: 1; // Set stacking order
@@ -219,7 +222,7 @@
     left: 50%; // Center horizontally
     transform: translateX(-50%); // Center the image
     max-width: 100%; // Limit image width
-    max-height: 100%; // Limit image height
+    max-height: 100dvh; // Limit image height
     animation: vanishDrop 2s ease-in-out forwards; // Apply animation
   }
 
