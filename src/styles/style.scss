@@ -212,7 +212,7 @@
   pointer-events: none; // Ensure the overlay doesn't interfere with other elements
   display: flex; // Use flexbox for layout
   z-index: 1; // Set stacking order
-  overflow: hidden; // Hide overflowing content
+  // overflow: hidden; // Hide overflowing content
   justify-content: center; // Center horizontally
   align-items: center; // Center vertically
 
