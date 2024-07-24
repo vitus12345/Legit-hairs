@@ -206,7 +206,7 @@
 .vector-overlay {
   position: absolute; // Absolute positioning
   left: 10%; // Offset from the left
-  top: clamp(30%, 3vw, 55%); // Vertical position with responsive clamp
+  top: clamp(40%, 5vw, 50%); // Vertical position with responsive clamp
   width: 100%; // Full width of the container
   height: 100dvh; // Full ; of the container
   pointer-events: none; // Ensure the overlay doesn't interfere with other elements
