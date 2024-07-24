@@ -135,10 +135,20 @@
   @media (max-width: 998px) {
     width: 100%; // Full width of the container
     color: $primary-color; // Text color based on variable
+    .line {
+      img {
+        display: none;
+      }
+      p {
+        text-align: center;
+      }
+    }
 
     .imgs {
       justify-content: center; // Center items horizontally
       margin: 0; // Remove margins
+      flex-direction: column;
+      gap: 10px;
 
       .arr {
         display: none; // Hide the arrow icon
@@ -146,6 +156,8 @@
     }
 
     .lastf {
+      flex-direction: column;
+      gap: 10px;
       .review {
         p,
         h4 {
@@ -180,6 +192,9 @@
 
     .imgs {
       margin-right: 0; // Remove right margin for images
+    }
+    .lastf {
+      flex-direction: column;
     }
   }
 }
