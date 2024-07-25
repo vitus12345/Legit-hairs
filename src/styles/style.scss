@@ -1,23 +1,15 @@
 // Import variables for consistent styling
 @import "variables";
 
-// Carousel item styling
-.carousel-item {
-  height: 100dvh; // Make each carousel item full height of the viewport
-}
-
 :root {
   --vh: 100vh; /* Fallback for browsers without JavaScript */
 }
 
-
-.carousel,
-.carousel-inner,
-.carousel-item,
-.page1,
-.page2,
-.page3 {
-  height: calc(var(--vh, 1vh) * 100); /* Use custom property for height */
+// Carousel item styling
+.carousel-item {
+  height: calc(
+    var(--vh, 1vh) * 100
+  ); // Make each carousel item full height of the viewport
 }
 
 // Page styling for different pages with background images
@@ -29,7 +21,7 @@
   background-size: cover; // Cover the entire container with the background image
   background-attachment: fixed; // Keep background image fixed during scroll
   width: 100%; // Full width of the viewport
-  height: 100%; // Full height of the viewport
+  height: calc(var(--vh, 1vh) * 100); /* Use custom property for height */
   padding-top: 100px; // Add padding at the top
   scroll-behavior: smooth; // Smooth scroll behavior
   position: relative; // Position relative for positioning child elements
@@ -37,13 +29,13 @@
 
 // Page-specific background images
 .page1 {
-  background-image: url(https://res.cloudinary.com/ddvo842wg/image/upload/v1721810863/Others/l3kw1qyuk1bw2qoni2an.png); // Set background image for Page 1
+  background-image: url(https://res.cloudinary.com/ddvo842wg/image/upload/v1721934517/Others/bzsx0lag1ugm2c0isvd8.png); // Set background image for Page 1
 }
 .page2 {
-  background-image: url(https://res.cloudinary.com/ddvo842wg/image/upload/v1721810897/Others/kdnybwk2qjjbl2zhh5s3.png); // Set background image for Page 2
+  background-image: url(https://res.cloudinary.com/ddvo842wg/image/upload/v1721934575/Others/fvyzsmuqdgli4jqelfyt.png); // Set background image for Page 2
 }
 .page3 {
-  background-image: url(https://res.cloudinary.com/ddvo842wg/image/upload/v1721811237/Others/w56ysyozl2wswdpzxh0n.png); // Set background image for Page 3
+  background-image: url(https://res.cloudinary.com/ddvo842wg/image/upload/v1721934675/Others/y9g0x2f7vwmthqhegatg.png); // Set background image for Page 3
 }
 
 // Common styling for page sections
@@ -51,7 +43,7 @@
 .pag1,
 .pag2 {
   width: 50%; // Set width to 50% of the container
-  padding: 0 20px; // Add horizontal padding
+  padding: 0 30px; // Add horizontal padding
   margin-top: 7rem;
 
   // Container-specific styles
@@ -145,8 +137,8 @@
 
   // Responsive design for screens smaller than 998px
   @media (max-width: 998px) {
-    .container{
-      h1{
+    .container {
+      h1 {
         text-align: center;
       }
     }
@@ -219,52 +211,5 @@
     .lastf {
       flex-direction: column;
     }
-  }
-}
-
-
-
-// Vector overlay styling
-.vector-overlay {
-  position: absolute; // Absolute positioning
-  left: 10%; // Offset from the left
-  top: clamp(40%, 5vw, 50%); // Vertical position with responsive clamp
-  width: 100%; // Full width of the container
-  height: 100dvh; // Full ; of the container
-  pointer-events: none; // Ensure the overlay doesn't interfere with other elements
-  display: flex; // Use flexbox for layout
-  z-index: 1; // Set stacking order
-  // overflow: hidden; // Hide overflowing content
-  justify-content: center; // Center horizontally
-  align-items: center; // Center vertically
-
-  img {
-    position: absolute; // Absolute positioning
-    top: -50%; // Initial top position for animation
-    left: 50%; // Center horizontally
-    transform: translateX(-50%); // Center the image
-    max-width: 100%; // Limit image width
-    max-height: 100dvh; // Limit image height
-    animation: vanishDrop 2s ease-in-out forwards; // Apply animation
-  }
-
-  @media (max-width: 998px) {
-    display: none; // Hide vector overlay on smaller screens
-  }
-}
-
-// Keyframes for vanish drop animation
-@keyframes vanishDrop {
-  0% {
-    top: -50%; // Start position
-    opacity: 0; // Start invisible
-  }
-  50% {
-    top: 0%; // Mid position
-    opacity: 1; // Fully visible
-  }
-  100% {
-    top: 0%; // End position
-    opacity: 1; // Fully visible
   }
 }

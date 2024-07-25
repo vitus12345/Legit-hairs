@@ -5,5 +5,5 @@ body {
   padding: 0; /* Remove default padding */
   font-family: 'Times New Roman', Times, serif; /* Set default font family */
   scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
