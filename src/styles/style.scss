@@ -37,8 +37,8 @@
 .pag1,
 .pag2 {
   width: 50%; // Set width to 50% of the container
-  margin-top: 10rem; // Add top margin
   padding: 0 20px; // Add horizontal padding
+  margin-top: 7rem;
 
   // Container-specific styles
   .container {
@@ -169,6 +169,12 @@
       }
     }
   }
+  @media screen and (min-width: 670px) and (max-width: 998px) {
+    margin-top: 8rem;
+  }
+  @media screen and (max-width: 660px) {
+    margin-top: 10rem;
+  }
 }
 
 // Additional styling for specific pages
@@ -201,6 +207,8 @@
     }
   }
 }
+
+
 
 // Vector overlay styling
 .vector-overlay {
