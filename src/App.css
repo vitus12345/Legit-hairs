@@ -1,7 +1,9 @@
  /* Base styling for the body element */
 body {
   margin: 0; /* Remove default margin */
+  height: 100%;
   padding: 0; /* Remove default padding */
   font-family: 'Times New Roman', Times, serif; /* Set default font family */
   scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+  overflow-y: auto;
 }

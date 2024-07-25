@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Page, Page2, Page3 } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/style.scss";
+import UpdateViewportHeight from "./utils/UpdateViewportHeight"; // Import the component
 
 /**
  * Display Component
@@ -10,6 +11,8 @@ import "./styles/style.scss";
 const Display = () => {
   return (
     <React.Fragment>
+      {/* Update viewport height for mobile devices */}
+      <UpdateViewportHeight />
       {/* BrowserRouter is used for routing within the application */}
       <BrowserRouter>
         {/* Navbar component renders the navigation bar */}

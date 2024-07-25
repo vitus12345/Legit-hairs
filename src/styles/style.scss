@@ -6,6 +6,20 @@
   height: 100dvh; // Make each carousel item full height of the viewport
 }
 
+:root {
+  --vh: 100vh; /* Fallback for browsers without JavaScript */
+}
+
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.page1,
+.page2,
+.page3 {
+  height: calc(var(--vh, 1vh) * 100); /* Use custom property for height */
+}
+
 // Page styling for different pages with background images
 .page1,
 .page2,
@@ -15,7 +29,7 @@
   background-size: cover; // Cover the entire container with the background image
   background-attachment: fixed; // Keep background image fixed during scroll
   width: 100%; // Full width of the viewport
-  height: 100dvh; // Full height of the viewport
+  height: 100%; // Full height of the viewport
   padding-top: 100px; // Add padding at the top
   scroll-behavior: smooth; // Smooth scroll behavior
   position: relative; // Position relative for positioning child elements
