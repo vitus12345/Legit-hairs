@@ -8,19 +8,21 @@ $secondary-color: #181818;
 $tops: 10px;
 
 // Responsive line height for horizontal elements
-$linesH: clamp(30px, 5vw, 45px);
+$linesH: 30px;
 
 // Responsive line height for vertical elements
-$linesV: clamp(24px, 5vw, 30px);
+$linesV: 24px;
 
 // Responsive line height for bottom elements
-$lineB: clamp(45px, 5vw, 78px);
+$lineB: 45px;
+
+$lineG: 72px;
 
 // Responsive width for lines or elements
-$lineW: clamp(12px, 2vw, 20px);
+$lineW: 15px;
 
 // Responsive radius for rounded elements
-$lineR: clamp(10px, 1vw, 15px);
+$lineR: 5px;
 
-$linesM: clamp(40px, 4vw, 45px);
+$linesM: 40px;
 

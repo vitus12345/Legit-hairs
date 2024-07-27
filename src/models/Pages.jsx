@@ -38,7 +38,7 @@ const Pages = ({
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <img src={lines} alt="" />
-            <p>{Phrase}</p>
+            <p className="phrase-text">{Phrase}</p>
           </motion.div>
 
           {/* Images (Arrow, App, Play) with animation */}
@@ -52,10 +52,10 @@ const Pages = ({
               <img src={Arrow} alt="" />
             </div>
             <div>
-              <img src={App} alt="" />
+              <img src={Play} alt="" />
             </div>
             <div>
-              <img src={Play} alt="" />
+              <img src={App} alt="" />
             </div>
           </motion.div>
 

@@ -20,7 +20,7 @@ const Page = () => {
         className="pag1" // CSS class for styling
         Heading="Discover New Hair Collection" // Heading text
         lines={Line} // Line image
-        Phrase="Fashion is part of the daily air and it changes all the time, with all the events." // Phrase text
+        Phrase="" // Phrase text
         App={AppleStore} // Apple Store image
         Play={PlayStore} // Play Store image
         Dpercent="25" // Discount percentage text

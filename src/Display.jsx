@@ -24,6 +24,7 @@ const Display = () => {
           className="carousel slide"
           data-bs-ride="carousel"
           data-bs-interval="5000" // Set the interval to 5 seconds
+          data-bs-pause="false" // Prevent the carousel from pausing on hover
         >
           <div className="carousel-inner">
             {/* First carousel item, which contains Page component */}

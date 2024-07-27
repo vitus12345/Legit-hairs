@@ -12,6 +12,7 @@
 .navbar-nav .nav-link {
   text-align: center; // Center align text in navbar links
   color: #fff; // White color for text
+  font-size: 16px;
 }
 
 // Logo image styling
@@ -50,7 +51,7 @@
 
   .icon-img {
     margin-left: 0; // Remove left margin
-    margin-bottom: 10px; // Add bottom margin for spacing between icons
+    // margin-bottom: 10px; // Add bottom margin for spacing between icons
   }
 
   .d-flex.align-items-center {
@@ -65,6 +66,13 @@
 
   .navbar-collapse {
     justify-content: flex-start; // Align navbar collapse content to the left
+  }
+  .navbar-nav .nav-link {
+    font-size: 10px;
+  }
+
+  .navbar-nav{
+    --bs-nav-link-padding-y: 0.1rem !important;
   }
 
   // Remove margin for icons in responsive view
