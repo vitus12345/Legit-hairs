@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/navbar.scss";
-import { RiMenu2Line } from "react-icons/ri";
 
 // NavbarProps component definition
 // Props include: logog, FirstL, SecondL, ThirdL, App, Play
@@ -10,7 +9,7 @@ const NavbarProps = ({ logog, FirstL, SecondL, ThirdL, App, Play }) => {
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid justify-content-between">
           {/* Logo section */}
-          <a className="navbar-brand w-25" href="/">
+          <a className="navbar-brand legit-logo" href="/">
             <img src={logog} alt="Logo" className="logo-img" />
           </a>
 
@@ -23,37 +22,9 @@ const NavbarProps = ({ logog, FirstL, SecondL, ThirdL, App, Play }) => {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{border: 'none'}}
           >
-            <RiMenu2Line style={{ color: "#fff" }} />
-          </button>
-
-          {/* Collapsible navbar content */}
-          <div
-            className="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            {/* Navbar links */}
-            <ul className="navbar-nav m-auto d-flex justify-content-between nav-items-spacing">
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  style={{ color: "#fff", fontWeight: "600" }}
-                  aria-current="page"
-                  href="/"
-                >
-                  {FirstL}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  style={{ color: "#fff", fontWeight: "600" }}
-                  href="/"
-                >
-                  {SecondL}
-                </a>
-              </li>
-              <li className="nav-item">
+                        <li className="nav-item">
                 <a
                   className="nav-link"
                   style={{ color: "#fff", fontWeight: "600" }}
@@ -62,10 +33,28 @@ const NavbarProps = ({ logog, FirstL, SecondL, ThirdL, App, Play }) => {
                   {ThirdL}
                 </a>
               </li>
+          </button>
+
+          {/* Collapsible navbar content */}
+          <div
+            className="collapse navbar-collapse justify-content-center downdrop"
+            id="navbarNav"
+          >
+            {/* Navbar links */}
+            <ul className="navbar-nav m-auto d-flex justify-content-between nav-items-spacing">
             </ul>
 
             {/* App and Play store icons */}
-            <ul className="ml-auto d-flex align-items-center">
+            <ul className="ml-auto d-flex align-items-center contact">
+            <li className="nav-item">
+                <a
+                  className="nav-link"
+                  style={{ color: "#fff", fontWeight: "600" }}
+                  href="/"
+                >
+                  {ThirdL}
+                </a>
+              </li>
               <div className="nav-item">
                 <a className="nav-link" href="/">
                   <img src={App} alt="App" className="icon-img" />

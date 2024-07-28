@@ -5,6 +5,8 @@
   --vh: 100vh; /* Fallback for browsers without JavaScript */
 }
 
+
+
 /* Carousel item styling */
 .carousel-item {
   height: calc(var(--vh, 1vh) * 100); /* Make each carousel item full height of the viewport */
@@ -62,6 +64,9 @@
       display: flex; /* Use flexbox for layout */
       align-items: center; /* Align items center vertically */
       gap: 10px; /* Gap between items */
+      .line-img{
+        width: auto;
+      }
       .phrase-text {
         white-space: pre-line; /* Preserve whitespace for line breaks */
         font-size: $linesV; /* Font size based on variable */

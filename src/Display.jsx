@@ -3,11 +3,19 @@ import { Navbar, Page, Page2, Page3 } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/style.scss";
 import UpdateViewportHeight from "./utils/UpdateViewportHeight"; // Import the component
+import OwlCarousel from 'react-owl-carousel'; // Import OwlCarousel
 
-/**
- * Display Component
- * Renders the main display of the application including the navbar and a carousel with three pages.
- */
+const options = {
+  items: 1,
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: false,
+};
+
 const Display = () => {
   return (
     <React.Fragment>
@@ -18,35 +26,21 @@ const Display = () => {
         {/* Navbar component renders the navigation bar */}
         <Navbar />
 
-        {/* Bootstrap carousel for sliding pages */}
-        <div
-          id="carouselExampleSlidesOnly"
-          className="carousel slide"
-          data-bs-ride="carousel"
-          data-bs-interval="5000" // Set the interval to 5 seconds
-          data-bs-pause="false" // Prevent the carousel from pausing on hover
-        >
-          <div className="carousel-inner">
-            {/* First carousel item, which contains Page component */}
-            <div className="carousel-item active">
-              <div className="page1">
-                <Page />
-              </div>
-            </div>
-            {/* Second carousel item, which contains Page2 component */}
-            <div className="carousel-item">
-              <div className="page2">
-                <Page2 />
-              </div>
-            </div>
-            {/* Third carousel item, which contains Page3 component */}
-            <div className="carousel-item">
-              <div className="page3">
-                <Page3 />
-              </div>
-            </div>
+        {/* Owl Carousel for sliding pages */}
+        <OwlCarousel className="owl-theme" {...options}>
+          {/* First carousel item, which contains Page component */}
+          <div className="page1">
+            <Page />
           </div>
-        </div>
+          {/* Second carousel item, which contains Page2 component */}
+          <div className="page2">
+            <Page2 />
+          </div>
+          {/* Third carousel item, which contains Page3 component */}
+          <div className="page3">
+            <Page3 />
+          </div>
+        </OwlCarousel>
       </BrowserRouter>
     </React.Fragment>
   );

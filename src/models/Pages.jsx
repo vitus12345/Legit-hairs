@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion"; // Importing Framer Motion for animations
-import { Arrow } from "../assets"; // Importing Arrow image from assets
 import "../styles/style.scss"; // Importing styles
 
 // Pages component definition
@@ -16,6 +15,9 @@ const Pages = ({
   customer2,
   customer3,
   Reviews,
+  arrivals,
+  Arrs,
+  WellReviews
 }) => {
   return (
     <React.Fragment>
@@ -37,7 +39,7 @@ const Pages = ({
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <img src={lines} alt="" />
+            <img src={lines} alt="" className="line-img"/>
             <p className="phrase-text">{Phrase}</p>
           </motion.div>
 
@@ -49,7 +51,7 @@ const Pages = ({
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             <div className="arr">
-              <img src={Arrow} alt="" />
+              <img src={Arrs} alt="" />
             </div>
             <div>
               <img src={Play} alt="" />
@@ -73,9 +75,9 @@ const Pages = ({
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                {Dpercent}%
+                {Dpercent}
               </motion.h2>
-              <span>Off New Arrivals </span>
+              <span>{arrivals}</span>
             </div>
 
             {/* Customer images and reviews */}
@@ -104,8 +106,8 @@ const Pages = ({
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <h4>{Reviews}K</h4>
-                <p>Well Reviews</p>
+                <h4>{Reviews}</h4>
+                <p>{WellReviews}</p>
               </motion.div>
             </div>
           </motion.div>
