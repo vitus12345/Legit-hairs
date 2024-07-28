@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion"; // Importing Framer Motion for animations
 import "../styles/style.scss"; // Importing styles
+import StoreButtons from "./StoreButtons"; // Importing the StoreButtons component
 
 // Pages component definition
 const Pages = ({
@@ -8,8 +9,6 @@ const Pages = ({
   Heading,
   lines,
   Phrase,
-  App,
-  Play,
   Dpercent,
   customer1,
   customer2,
@@ -17,7 +16,7 @@ const Pages = ({
   Reviews,
   arrivals,
   Arrs,
-  WellReviews
+  WellReviews,
 }) => {
   return (
     <React.Fragment>
@@ -27,7 +26,7 @@ const Pages = ({
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1.0 }}
           >
             {Heading}
           </motion.h1>
@@ -37,9 +36,9 @@ const Pages = ({
             className="line"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <img src={lines} alt="" className="line-img"/>
+            <img src={lines} alt="" className="line-img" />
             <p className="phrase-text">{Phrase}</p>
           </motion.div>
 
@@ -48,17 +47,16 @@ const Pages = ({
             className="imgs"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 1.0 }}
           >
             <div className="arr">
               <img src={Arrs} alt="" />
             </div>
-            <div>
-              <img src={Play} alt="" />
-            </div>
-            <div>
-              <img src={App} alt="" />
-            </div>
+            <StoreButtons
+              storeBtn="store-btn"
+              google="googled"
+              apple="appled"
+            />
           </motion.div>
 
           {/* Discount percentage and customer reviews with animation */}

@@ -5,11 +5,11 @@
   --vh: 100vh; /* Fallback for browsers without JavaScript */
 }
 
-
-
 /* Carousel item styling */
 .carousel-item {
-  height: calc(var(--vh, 1vh) * 100); /* Make each carousel item full height of the viewport */
+  height: calc(
+    var(--vh, 1vh) * 100
+  ); /* Make each carousel item full height of the viewport */
 }
 
 /* Page styling for different pages with background images */
@@ -38,6 +38,33 @@
   background-image: url(https://res.cloudinary.com/ddvo842wg/image/upload/v1721934675/Others/y9g0x2f7vwmthqhegatg.png); /* Set background image for Page 3 */
 }
 
+.store-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  a {
+    margin: 10px 20px;
+    width: 200px;
+    height: 60px; /* Ensure both buttons have the same height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Example border */
+    border-radius: 8px; /* Example border radius */
+    text-decoration: none; /* Remove underline from links */
+    box-shadow: rgba(67, 218, 12, 0.82);
+    transition: all 0.3s ease-out; /* Smooth transition for hover effects */
+    .googled {
+      width: 115% !important;
+    }
+    
+  }
+  @media (max-width: 998px) {
+    flex-direction: column;
+  }
+}
+
 /* Common styling for page sections */
 .pag,
 .pag1,
@@ -64,7 +91,7 @@
       display: flex; /* Use flexbox for layout */
       align-items: center; /* Align items center vertically */
       gap: 10px; /* Gap between items */
-      .line-img{
+      .line-img {
         width: auto;
       }
       .phrase-text {
@@ -155,7 +182,7 @@
     color: $primary-color; /* Text color based on variable */
     .container {
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         text-align: center;
       }
       .line {
@@ -168,7 +195,7 @@
         }
         /* Remove line breaks for smaller screens */
         .phrase-text {
-          font-size: $lineW;
+          font-size: 20px;
           font-weight: 400;
           &::before {
             content: "Fashion is part of the daily air and it all the time, with all the events.";
@@ -199,7 +226,7 @@
             text-align: center;
           }
         }
-        .ellisple{
+        .ellisple {
           margin-top: 5px;
           flex-direction: column-reverse;
           text-align: center;
@@ -221,7 +248,6 @@
     margin-top: 8rem;
     padding-bottom: 30px;
     margin-bottom: 30px;
-
   }
 
   @media screen and (max-width: 660px) {

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/navbar.scss";
+import StoreButtons from "./StoreButtons"; // Importing the StoreButtons component
 
 // NavbarProps component definition
 // Props include: logog, FirstL, SecondL, ThirdL, App, Play
@@ -22,17 +23,17 @@ const NavbarProps = ({ logog, FirstL, SecondL, ThirdL, App, Play }) => {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            style={{border: 'none'}}
+            style={{ border: "none" }}
           >
-                        <li className="nav-item">
-                <a
-                  className="nav-link"
-                  style={{ color: "#fff", fontWeight: "600" }}
-                  href="/"
-                >
-                  {ThirdL}
-                </a>
-              </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                style={{ color: "#fff", fontWeight: "600" }}
+                href="/"
+              >
+                {ThirdL}
+              </a>
+            </li>
           </button>
 
           {/* Collapsible navbar content */}
@@ -41,30 +42,24 @@ const NavbarProps = ({ logog, FirstL, SecondL, ThirdL, App, Play }) => {
             id="navbarNav"
           >
             {/* Navbar links */}
-            <ul className="navbar-nav m-auto d-flex justify-content-between nav-items-spacing">
-            </ul>
+            <ul className="navbar-nav m-auto d-flex justify-content-between nav-items-spacing"></ul>
 
             {/* App and Play store icons */}
             <ul className="ml-auto d-flex align-items-center contact">
-            <li className="nav-item">
+              <li className="nav-item">
                 <a
                   className="nav-link"
-                  style={{ color: "#fff", fontWeight: "600" }}
+                  style={{ color: "#fff", fontWeight: "700" }}
                   href="/"
                 >
                   {ThirdL}
                 </a>
               </li>
-              <div className="nav-item">
-                <a className="nav-link" href="/">
-                  <img src={App} alt="App" className="icon-img" />
-                </a>
-              </div>
-              <div className="nav-item">
-                <a className="nav-link" href="/">
-                  <img src={Play} alt="Play" className="icon-img" />
-                </a>
-              </div>
+              <StoreButtons
+                storeBtn="storebtn"
+                google="googla"
+                apple="appla"
+              />
             </ul>
           </div>
         </div>

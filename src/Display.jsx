@@ -8,12 +8,12 @@ import OwlCarousel from 'react-owl-carousel'; // Import OwlCarousel
 const options = {
   items: 1,
   loop: true,
-  margin: 10,
-  nav: true,
-  dots: true,
+  margin: 3,
+  nav: false,
+  dots: false,
   autoplay: true,
   autoplayTimeout: 5000,
-  autoplayHoverPause: false,
+  autoplayHoverPause: true,
 };
 
 const Display = () => {
