@@ -42,7 +42,9 @@ const NavbarProps = ({ logog, FirstL, SecondL, ThirdL, App, Play }) => {
             id="navbarNav"
           >
             {/* Navbar links */}
-            <ul className="navbar-nav m-auto d-flex justify-content-between nav-items-spacing"></ul>
+            <ul className="navbar-nav m-auto d-flex justify-content-between nav-items-spacing">
+              
+            </ul>
 
             {/* App and Play store icons */}
             <ul className="ml-auto d-flex align-items-center contact">

@@ -1,13 +1,13 @@
 import React from "react"; // Import React
 import {
   AppleStore, // Import AppleStore image
+  PlayStore, // Import PlayStore image
+  Line, // Import Line image
+  Arrow
   // Ellipse, // Import Ellipse image
   // Ellipse1, // Import Ellipse1 image
   // Ellipse2, // Import Ellipse2 image
-  Line, // Import Line image
-  PlayStore, // Import PlayStore image
-  Vector, // Import Vector image
-  Arrow
+  // Vector, // Import Vector image
 } from "../assets"; // Import assets from the assets directory
 import { Pages } from "../models"; // Import Pages component from the models directory
 import "../styles/style.scss"; // Import styles
@@ -24,9 +24,9 @@ const Page = () => {
         Phrase="" // Phrase text
         Play={PlayStore} // Play Store image
         App={AppleStore} // Apple Store image
-        vectors={Vector} // Vector image
         Arrs={Arrow}
         // Dpercent="25%" // Discount percentage text
+        // vectors={Vector} // Vector image
         // customer1={Ellipse} // Customer image 1
         // customer2={Ellipse1} // Customer image 2
         // customer3={Ellipse2} // Customer image 3
